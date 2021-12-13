@@ -1,0 +1,27 @@
+<form [formGroup]="projectForm" style="margin: auto;">
+  <h2>Ajouter nouveau projet:</h2>
+  <mat-form-field appearance="outline">
+    <mat-label>Nom</mat-label>
+    <input matInput type="text" placeholder="Nom"  formControlName="nom">
+  </mat-form-field>
+
+  <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Description</mat-label>
+    <input matInput type="text" placeholder="Description" formControlName="description">
+  </mat-form-field>
+
+  <br>
+  <mat-form-field appearance="outline">
+    <mat-label>confidentialite</mat-label>
+    <input matInput type="text" placeholder="Confidentialite"  formControlName="confidentialite">
+  </mat-form-field>
+
+  <br>
+
+  <button mat-raised-button color="primary" (click)="submit()">Ajouter</button>
+
+
+
+
+</form>
